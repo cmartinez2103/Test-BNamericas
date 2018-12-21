@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>User</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+        crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/styles.css" />
+
+</head>
+
+<body>
+    <header>
+        <nav class="nav-bar">
+            <div class="nav-bar__brand">
+                <a href="#" arial-label="Home" title="Ir a BN">
+                    <img src="img/logo.svg" class="app-brand" alt="Logo BN">
+                </a>
+            </div>
+            <div class="nav-bar__body">
+
+                <ul class="nav-bar__menu">
+                    <li>
+                        <a href="#" arial-label="Home" title="Ir a la Home" class="icon icon--home"></a>
+                    </li>
+                    <li>
+                        <a href="#" arial-label="Administradores" title="Ir a los administradores" class="icon icon--group-admin"></a>
+                    </li>
+                    <li>
+                        <a href="#" arial-label="Editar" title="Ir a editar" class="icon icon--edit"></a>
+                    </li>
+                </ul>
+
+                <ul class="nav-bar__menu">
+                    <li>
+                        <a href="#" arial-label="Archivo" title="Ir a los archivos" class="icon icon--archive"></a>
+                    </li>
+                    <li>
+                        <a href="#" arial-label="Alertas" title="Ir a las alertas" class="icon icon--alert"></a>
+                    </li>
+                    <li>
+                        <a href="#" arial-label="Perfil" title="Ir al perfil" class="icon icon--person"></a>
+                    </li>
+                    <li>
+                        <a href="#" arial-label="Chat" title="Ir al chat" class="icon icon--chat"></a>
+                    </li>
+                </ul>
+
+            </div>
+        </nav>
+    </header>
+
+    <!---Main---->
+    <main class="wrapper">
+        <!--menu-->
+        <div class="menu">
+            <h1>Administrador de usuarios</h1>
+            <div class="menu__action">
+                <button type="button" class="btn btn--add" id="addUser" title="Agregar Usuario">Agregar usuario</button>
+                <form method="get" action="/" class="menu__search">
+                    <div class="menu__search--input">
+                        <input type="search" name="s" placeholder="Buscar usuarios">
+                        <button type="submit" title="Bucar usuario"><i class="fas fa-search"></i></button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <!--content-->
+        <section>
+            <div class="container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th><button type="button" aria-label="Cambiar orden por Nombre" data-change>Nombre</button></th>
+                            <th><button type="button" aria-label="Cambiar orden por Correo" data-change>Correo electronico</button></th>
+                            <th><button type="button" aria-label="Cambiar orden por Rol" data-change>Rol</button></th>
+                            <th></th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Juan Escaleras</td>
+                            <td>name@bnamericas.com</td>
+                            <td>Normal</td>
+                            <td width="15%"><button class="btn btn--blue small" title="Acceder como">Acceder como</button></td>
+                            <td width="15%"><button class="btn btn--remove small" title="Eliminar">Eliminar</button></td>
+                        </tr>
+                        <tr>
+                            <td>Pedro Estandar</td>
+                            <td>name@bnamericas.com</td>
+                            <td>Normal</td>
+                            <td width="15%"><button class="btn btn--blue small" title="Acceder como">Acceder como</button></td>
+                            <td width="15%"><button class="btn btn--remove small" title="Eliminar">Eliminar</button></td>
+                        </tr>
+                        <tr>
+                            <td>Esteban Paredes</td>
+                            <td>name@bnamericas.com</td>
+                            <td>Admin</td>
+                            <td width="15%"><button class="btn btn--blue small" title="Acceder como">Acceder como</button></td>
+                            <td width="15%"><button class="btn btn--remove small" title="Eliminar">Eliminar</button></td>
+                        </tr>
+                        <tr>
+                            <td>Pedro Estandar</td>
+                            <td>name@bnamericas.com</td>
+                            <td>Normal</td>
+                            <td width="15%"><button class="btn btn--blue small" title="Acceder como">Acceder como</button></td>
+                            <td width="15%"><button class="btn btn--remove small" title="Eliminar">Eliminar</button></td>
+                        </tr>
+                        <tr>
+                            <td>Pedro Estandar</td>
+                            <td>name@bnamericas.com</td>
+                            <td>Normal</td>
+                            <td width="15%"><button class="btn btn--blue small" title="Acceder como">Acceder como</button></td>
+                            <td width="15%"><button class="btn btn--remove small" title="Eliminar">Eliminar</button></td>
+                        </tr>
+                        <tr>
+                            <td>Esteban Paredes</td>
+                            <td>name@bnamericas.com</td>
+                            <td>Normal</td>
+                            <td width="15%"><button class="btn btn--blue small" title="Acceder como">Acceder como</button></td>
+                            <td width="15%"><button class="btn btn--remove small" title="Eliminar">Eliminar</button></td>
+                        </tr>
+                        <tr>
+                            <td>Esteban Paredes</td>
+                            <td>name@bnamericas.com</td>
+                            <td>Normal</td>
+                            <td width="15%"><button class="btn btn--blue small" title="Acceder como">Acceder como</button></td>
+                            <td width="15%"><button class="btn btn--remove small" title="Eliminar">Eliminar</button></td>
+                        </tr>
+                        <tr>
+                            <td>Esteban Paredes</td>
+                            <td>name@bnamericas.com</td>
+                            <td>Normal</td>
+                            <td width="15%"><button class="btn btn--blue small" title="Acceder como">Acceder como</button></td>
+                            <td width="15%"><button class="btn btn--remove small" title="Eliminar">Eliminar</button></td>
+                        </tr>
+
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <!--form lateral-->
+    <div class="wrapper__aside" id="wrapperSidebar">
+        <aside id="aside">
+            <form action="/" method="post">
+                <h3>Agrega a un nuevo usuario</h3>
+                <button type="button" aria-label="close" class="close btn-close" title="Cancelar"><i class="fas fa-arrow-right"></i></button>
+
+                <label for="email">Correo electrónico</label>
+                <input type="email" name="email" id="email">
+
+                <label for="rol-user">Rol del usuario</label>
+                <select name="rol-user">
+                    <option value="">Seleccionar</option>
+                    <option value="Rol uno">Rol uno</option>
+                </select>
+
+                <div class="action">
+                    <button type="button" class="btn btn-close" title="Cancelar">Cancelar</button>
+                    <button type="button" class="btn btn--add" title="Agregar usuario">Agregar</button>
+                </div>
+            </form>
+            <div class="caption">
+                <img src="img/icon/group-admin-color.svg">
+                <p>Ingresa un correo electrónico y rol para crear un nuevo usuario</p>
+            </div>
+        </aside>
+    </div>
+    <footer></footer>
+    <script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>
